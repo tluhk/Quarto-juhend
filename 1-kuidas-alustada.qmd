@@ -26,7 +26,7 @@ Järgmise sammuna loo omale repositoorium kasutades selleks malli, mis sisaldab 
 ## Oluline on tuua üle kõik harud(*branches*) ja repositoorium peab olema avalik!
 :::
 
-1.  Mine brauseris aadressile: <https://github.com/ErikTellas/Quarto-user-test>
+1.  Mine brauseris aadressile: <https://github.com/tluhk/Quarto-mall>
 
 2.  Klõpsa rohelist **"Use this template"** nuppu ja seejärel **"Create a new repository"**
 
