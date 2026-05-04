@@ -1,0 +1,30 @@
+project:
+  type: book
+
+book:
+  title: "Quarto Juhend"
+  author: "Erik Tellas"
+  date: "4/17/2026"
+  chapters:
+    - index.qmd
+    - 1-kuidas-alustada.qmd
+    - 2-kuidas-sisu-muuta.qmd
+    - 3-raamatu-loomine-nullist.qmd
+    - 4-raamatu-struktuur.qmd
+    - 5-sisu-kolimine-pressbooksist.qmd
+    - 6-google-analytics-ja-youtube.qmd
+    - 7-kasulikud-lingid.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    link-external-newwindow: true
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+
+

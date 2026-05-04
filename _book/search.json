@@ -1,0 +1,342 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto Juhend",
+    "section": "",
+    "text": "Sissejuhatus\nQuarto on avatud lähtekoodiga raamistik, mis võimaldab luua mitmesuguseid dokumente, sealhulgas raamatuid, veebisaite, aruandeid ja palju muud. Quarto toetab mitmeid sisutüüpe, nagu tekst, pildid, tabelid, koodiplokid ja interaktiivsed elemendid. Quarto kasutab Markdowni süntaksit koos laiendustega, et võimaldada rikkalikku vormingut ja funktsionaalsust.\nSee juhend sisaldab samm-sammult juhiseid, kuidas luua Quarto raamat nullist, kuidas muuta selle sisu, kuidas tuua sisu üle Pressbooksist ja palju muud.",
+    "crumbs": [
+      "Sissejuhatus"
+    ]
+  },
+  {
+    "objectID": "index.html#sisukord",
+    "href": "index.html#sisukord",
+    "title": "Quarto Juhend",
+    "section": "1.1 Sisukord:",
+    "text": "1.1 Sisukord:\n\nKuidas alustada\nRaamatu struktuur\nKuidas sisu muuta\n\nOlemasoleva peatüki muutmine\nUue peatüki lisamine\nMuudatuste avaldamine\nRaamatu autori, nime ja muu info muutmine\nMarkdown põhitõed\n\nQuarto raamatu loomine nullist\n\nBook tüüpi projekti loomine\nProjekti lisaminine GitHubi repositooriumisse\nAvaldamine GitHub Pagesi\n\nSisu kolimine Pressbooksist\n\nMeetod 1: Kopeerimine redaktorist redaktorisse (soovituslik)\nPressbooksi textbox-id Quartos\nMeetod 2: Pressbooksi eksport EPUB-iks ja Pandociga Markdowniks (mittesoovituslik)\n\nGoogle Analytics ja YouTube’i sündmused\nKasulikud lingid",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Quarto õpikud</span>"
+    ]
+  },
+  {
+    "objectID": "1-kuidas-alustada.html",
+    "href": "1-kuidas-alustada.html",
+    "title": "1  Kuidas alustada",
+    "section": "",
+    "text": "1.1 Positron installimine\nSelles peatükis on juhised, kuidas paigaldada oma arvutisse vajalikud tööriistad Quarto raamatu loomiseks ja muutmiseks. Seejärel juhised, kuidas kloonida see raamatu repositoorium oma arvutisse ja avada see Positronis, et saaksid raamatut vaadata ja muuta.\nPositron on IDE (Integrated Development Environment - Arenduskeskkond), mis sisaldab vajalike tööriistu Quarto raamatute loomiseks ja sisu muutmiseks.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Kuidas alustada</span>"
+    ]
+  },
+  {
+    "objectID": "1-kuidas-alustada.html#positron-installimine",
+    "href": "1-kuidas-alustada.html#positron-installimine",
+    "title": "1  Kuidas alustada",
+    "section": "",
+    "text": "Mine aadressile: https://positron.posit.co/install.html\nLae alla installer oma operatsioonisüsteemile (Windows, macOS, Linux)\nKäivita installer ja järgi juhiseid",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Kuidas alustada</span>"
+    ]
+  },
+  {
+    "objectID": "1-kuidas-alustada.html#github-desktop-installimine",
+    "href": "1-kuidas-alustada.html#github-desktop-installimine",
+    "title": "1  Kuidas alustada",
+    "section": "1.2 GitHub Desktop installimine",
+    "text": "1.2 GitHub Desktop installimine\nGitHub on veebipõhine platvorm koodi ja dokumentatsiooni majutamiseks ning versioonihalduseks. GitHub Desktop on tööriist, mis võimaldab sul hallata GitHubi repositooriume oma arvutis.\n\nMine aadressile: https://desktop.github.com/\nLae alla installer ja käivita see\nLogi sisse oma GitHub kontoga (kui sul pole kontot, loo see aadressil https://github.com)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Kuidas alustada</span>"
+    ]
+  },
+  {
+    "objectID": "1-kuidas-alustada.html#repositooriumi-kloonimine",
+    "href": "1-kuidas-alustada.html#repositooriumi-kloonimine",
+    "title": "1  Kuidas alustada",
+    "section": "1.4 Repositooriumi kloonimine",
+    "text": "1.4 Repositooriumi kloonimine\nNüüd oled loonud omale malli järgi lihtsa Quarto raamatu repositooriumi. Järgmise sammuna klooni see oma arvutisse.\n\nAva brauseris oma repositoorium (või kui juba oled seal siis jätta see samm vahele): https://github.com/SINU_KASUTAJANIMI/Quarto_opikud\nKlõpsa rohelist “Code” nuppu\n\nVali “Open with GitHub Desktop”\nGitHub Desktop avaneb ja küsib, kuhu soovid projekti salvestada. Soovituslik on valida vaikimisi kaust Documents/GitHub/Quarto_opikud\n\nKlõpsa “Clone”",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Kuidas alustada</span>"
+    ]
+  },
+  {
+    "objectID": "1-kuidas-alustada.html#projekti-avamine-positronis",
+    "href": "1-kuidas-alustada.html#projekti-avamine-positronis",
+    "title": "1  Kuidas alustada",
+    "section": "1.5 Projekti avamine Positronis",
+    "text": "1.5 Projekti avamine Positronis\n\nAva rakendus Positron\n\n\n\n\n\n\nNotePositron võib sind hoiatada, et git pole paigaldatud. Võid seda hetkel ignoreerida.\n\n\n\n\n\n\nVali File → Open Folder\nNavigeeri kausta Quarto_opikud. Vaikimisi paigutasid sa selle oma dokumentide kastas asuvasse Githubkausta. (Documents/GitHub/Quarto_opikud)\nKlõpsa Open / Select Folder\nPositron küsib, kas usaldad selle kausta failide autoreid, klõpsa Yes, I trust the authors\n\nNüüd oled avanud raamatu projekti kausta Positroni rakenduses. Vasakul pool asub Explorer paneel. Siin näed sa erinevaid faile mis asuvad selles kaustas. Iga .qmd fail on eraldi peatükk. Näiteks 5-Mis-on-infoühiskond.qmd on selles näidisraamatus peatükk “Mis on info ühiskond?”.\n\n\n\n\n\n\n\n\n\n\n\nTipTäpsemalt saad soovikorral tutvuda ühe tüüpilise raamatu struktuuriga peatükis 2.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Kuidas alustada</span>"
+    ]
+  },
+  {
+    "objectID": "1-kuidas-alustada.html#raamatu-eelvaade",
+    "href": "1-kuidas-alustada.html#raamatu-eelvaade",
+    "title": "1  Kuidas alustada",
+    "section": "1.6 Raamatu eelvaade",
+    "text": "1.6 Raamatu eelvaade\nEelvaade võimaldab sul näha milline näeb su raamatu välja veebis.\n\nAva mõni .qmd fail (nt 5-Mis-on-infoühiskond.qmd), avades vasakul pool explorer paneelis kausta Quarto_opikud ja klõpsates faili nimel\nÜleval vasakul on valik Render on Save, veendu, et see on valitud. See tähendab, et Quarto üritab tuvastada automaatselt, kui sa salvestad faili ja uuendab eelvaadet.\nKlõpsa üleval nuppu Preview (või vajuta Ctrl+Shift+K / Cmd+Shift+K)\n\nPaari sekundi jooksul avaneb raamatu eelvaade Positroni sisseehitatud brauseris. Eelvaadet paneeli saad kursuriga tõmmata suuremaks ja väiksemaks. Kui asetad kursori eelvaate paneeli servale muutub serv siniseks.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Kuidas alustada</span>"
+    ]
+  },
+  {
+    "objectID": "2-raamatu-struktuur.html",
+    "href": "2-raamatu-struktuur.html",
+    "title": "2  Raamatu struktuur",
+    "section": "",
+    "text": "Opikud/Book_Project/\n├── _quarto.yml      # Raamatu seadistused (pealkiri, autor, peatükid)\n├── index.qmd        # Avalehekülg\n├── intro.qmd        # Sissejuhatus\n├── H5P.qmd          # H5P peatükk\n├── CODAP.qmd        # CODAP peatükk\n├── NetLogo.qmd      # NetLogo peatükk\n├── references.qmd   # Viited\n├── references.bib   # Viidete andmebaas\n├──_book/           # Genereeritud HTML failid\n└──  .quarto/         # Quarto ajutised failid ja cache",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Raamatu struktuur</span>"
+    ]
+  },
+  {
+    "objectID": "3-kuidas-sisu-muuta.html",
+    "href": "3-kuidas-sisu-muuta.html",
+    "title": "2  Kuidas sisu muuta",
+    "section": "",
+    "text": "2.1 Olemasoleva peatüki muutmine, visuaalne redaktor\nSelles peatükis on juhised, kuidas olemasoleva raamatu sisu muuta ja kuidas lisada uusi peatükke. Lisaks lühike ülevaade Markdowni põhitõdedest, mida kasutatakse .qmd failides.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Kuidas sisu muuta</span>"
+    ]
+  },
+  {
+    "objectID": "3-kuidas-sisu-muuta.html#olemasoleva-peatüki-muutmine",
+    "href": "3-kuidas-sisu-muuta.html#olemasoleva-peatüki-muutmine",
+    "title": "3  Kuidas sisu muuta",
+    "section": "",
+    "text": "Ava soovitud .qmd fail (nt intro.qmd)\nVajuta üleval paremal kolme punktiga ikoonile ja vali Edit in Visual Mode\n\nÜleval vasakul on valik Render on Save, veendu, et see on valitud (See tähendab, et iga kord, kui salvestad faili, uuendatakse eelvaadet)\n\nVajuta nupul Preview. Kui Preview on avatud, näed eelvaadet, mis on sarnane veebiväljundile. Kuid see ei ole alati 100% täpne. Soovikorral saad avada veebiväljundi eraldi brauseris, vajutades ikoonile paremal üleval.\n\nMuuda sisu\nSalvesta fail (Ctrl+S / Cmd+S)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kuidas sisu muuta</span>"
+    ]
+  },
+  {
+    "objectID": "3-kuidas-sisu-muuta.html#uue-peatüki-lisamine",
+    "href": "3-kuidas-sisu-muuta.html#uue-peatüki-lisamine",
+    "title": "2  Kuidas sisu muuta",
+    "section": "2.2 Uue peatüki lisamine",
+    "text": "2.2 Uue peatüki lisamine\nKuna iga .qmd fail on omaette peatükk, tuleb uue peatüki lisamiseks luua uus .qmd fail.\n\nLoo uus .qmd fail (nt 6-uus-peatykk.qmd) explorer paneelis, klõpsates vasakul üleval nuppu New File. Nupp võib olla ruumi säästmiseks peidus, aga ilmub nähtavale kursuriga raamatu kausta nime peal hõljudes.\n\n\n\n\n\n\nImportantÄra unusta faili nime taha kirjutada faili laiendit .qmd\n\n\n\n\n\n\n\nJärgmiseks on vaja määrata kus kohas raamatus su uus peatükk asub. Ava _quarto.yml fail ja lisa uue peatüki failinimi chapters sektsiooni:\n  chapters:\n    - index.qmd\n    - 1-H5P.qmd\n    - 2-CODAP.qmd\n    - 3-NetLogo.qmd\n    - 4-infoplokid.qmd\n    - 5-Mis-on-infouhiskond.qmd\n    - 6-uus-peatykk.qmd      # Lisa näiteks siia, et loodud peatükk oleks viimane\nSalvesta fail (Ctrl+S / Cmd+S).\nVali uuesti 6-uus-peatykk.qmd fail visuaalses redaktoris ning lisa peatükile pealkiri. Kirjuta näiteks “Uus peatükk” ja seejärel muuda teksti stiil ülevalt paremalt Heading 1-ks.\n\nSalvesta fail (Ctrl+S / Cmd+S) ja kontrolli tulemust eelvaates.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Kuidas sisu muuta</span>"
+    ]
+  },
+  {
+    "objectID": "3-kuidas-sisu-muuta.html#muudatuste-avaldamine",
+    "href": "3-kuidas-sisu-muuta.html#muudatuste-avaldamine",
+    "title": "2  Kuidas sisu muuta",
+    "section": "2.3 Muudatuste avaldamine",
+    "text": "2.3 Muudatuste avaldamine\nNüüd oleme teinud raamatusse üsna mitu muudatust ja oleks aeg see ka teistele nähtavaks teha. Selleks kasutame esimeses peatükis paigaldatud GitHub Desktop rakendust.\nMe salvestame need tehtud muudatused n-ö “pakiks”. Saadame need GitHubi, kus ka teised näevad neid ja seal luuakse automaatselt ka õpiku veebiversioon. Edaspidi käib veebiversiooni uuendamine sama moodi:\n\nEsmal veendu Positronis, et failid oleksid salvestatud (Ctrl+S / Cmd+S). Kui faili akna pealkirjas on ringikujuline ikoon, tähendab see, et antud failis on salvestamata muudatusi.\n\nAva GitHub Desktop\nVasakul näed muudetud faile, paremal pool valitud failis tehtud muudatusi.\n\n\n\n\n\n\nNoteGitHub Desktop võib näidata rohkem failimuudatusi kui sa tegid\n\n\n\nKuna Quarto genereerib sinu muudetud .qmd failidest ka veebilehe jms, siis võid näha GitHub desktopis sinu muudetud ühe faili asemele muudatusi näiteks kolmes failis.\n\n\nKirjuta alla väljale “Summary” lühike kirjeldus (nt “Lisasin uue peatüki”).\nDescription väljale võid lisada pikema kirjelduse, kui soovid (nt “Uus peatükk annab ülevaate…”).\nKlõpsa “Commit to main” - see salvestab muudatused sinu arvutis “pakiks”.\n\nKlõpsa üleval või paremalpool “Push origin” - see laeb “paki” üles GitHubi.\n\n\nCommit = salvesta muudatused lokaalselt (sinu arvutis)\nPush = lae muudatused üles GitHubi (et teised näeksid)\n\nGitHub Actions ehitab ja avaldab raamatu automaatselt. Paari minuti pärast on muudatused nähtavad ka raamtu veebilehel.\nEt saada link oma raamatu veebilehele ja teha see ka teiste jaoks lihtsasti kättesaadavaks, mine veebibrauseris tagasi oma loodud repositooriumi lehele. Selleks vajuta nuppu View on GitHub.\n\nSeejärel vajuta About sektsioonis hammasratta ikoonile.\n\nVali avanenud aknas Use your GitHub Pages website ja seejärel Save changes.\n\nNüüd ilmub sinu raamatu link About sektsiooni. Sealt saad selle alati lihtsasti kätte.\n\n\n\n\n\n\n\nNoteLingi formaat\n\n\n\nGitHub Pages veebilehtede formaat on tavaliselt järgmine:\nhttps://SINU-KASUTAJANIMI.github.io/REPOSITOORIUMI-NIMI/\nEhk siis antud juhul on link:\nhttps://SINU-KASUTAJANIMI.github.io/Quarto_opikud/",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Kuidas sisu muuta</span>"
+    ]
+  },
+  {
+    "objectID": "3-kuidas-sisu-muuta.html#raamatu-autori-nime-ja-muu-info-muutmine",
+    "href": "3-kuidas-sisu-muuta.html#raamatu-autori-nime-ja-muu-info-muutmine",
+    "title": "2  Kuidas sisu muuta",
+    "section": "2.4 Raamatu autori, nime ja muu info muutmine",
+    "text": "2.4 Raamatu autori, nime ja muu info muutmine\n\nAva _quarto.yml fail\nMuuda title, author ja muid välju vastavalt soovile\nbook:\n    title: \"Minu Quarto Raamat\"\n    author: \"Teie Nimi\"\n    date: \"4/17/2026\" # Raamatu avaldamise kuupäev\nLisainfo: https://quarto.org/docs/guide/",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Kuidas sisu muuta</span>"
+    ]
+  },
+  {
+    "objectID": "3-kuidas-sisu-muuta.html#markdown-põhitõed",
+    "href": "3-kuidas-sisu-muuta.html#markdown-põhitõed",
+    "title": "2  Kuidas sisu muuta",
+    "section": "2.5 Markdown põhitõed",
+    "text": "2.5 Markdown põhitõed\n# Pealkiri 1\n# Pealkiri 2\n## Pealkiri 3\n\n**Paks tekst**\n*Kaldkiri*\n\n- Loetelu punkt\n- Teine punkt\n\n1. Nummerdatud\n2. Loetelu\n\n[Link](https://example.com)\n\n![Pildi kirjeldus](pilt.png)\nVaata ka - Markdown juhend",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Kuidas sisu muuta</span>"
+    ]
+  },
+  {
+    "objectID": "4-raamatu-loomine-nullist.html",
+    "href": "4-raamatu-loomine-nullist.html",
+    "title": "4  Quarto raamatu loomine nullist",
+    "section": "",
+    "text": "4.1 Book tüüpi projekti loomine\nSelles peatükis on juhised, kuidas luua uus Quarto raamat nullist, lisada see GitHubi repositooriumisse ja avaldada see veebilehena GitHub Pagesi kaudu.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Quarto raamatu loomine nullist</span>"
+    ]
+  },
+  {
+    "objectID": "4-raamatu-loomine-nullist.html#book-tüüpi-projekti-loomine",
+    "href": "4-raamatu-loomine-nullist.html#book-tüüpi-projekti-loomine",
+    "title": "4  Quarto raamatu loomine nullist",
+    "section": "",
+    "text": "Ava Command Palette (Positroni käsuriba):\n\n\nCmd + Shift + P (Mac)\nCtrl + Shift + P (Windows)\n\n\nOtsi “Quarto: Create New Project” ja vali see\nVali “Book” tüüpi projekt\n\nSeejärel vali projekti asukoht (soovituslikult: Documents/GitHub/)\nSeejärelt anna projektile nimi (nt “Minu-Raamat”) ja vajuta Enter",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Quarto raamatu loomine nullist</span>"
+    ]
+  },
+  {
+    "objectID": "4-raamatu-loomine-nullist.html#projekti-lisaminine-githubi-repositooriumisse",
+    "href": "4-raamatu-loomine-nullist.html#projekti-lisaminine-githubi-repositooriumisse",
+    "title": "4  Quarto raamatu loomine nullist",
+    "section": "4.2 Projekti lisaminine GitHubi repositooriumisse",
+    "text": "4.2 Projekti lisaminine GitHubi repositooriumisse\n\nAva GitHub Desktop\nKlõpsa File → Add Local Repository\nVali projekti kaust (nt Documents/GitHub/Minu-Raamat) vajutades nupul Choose ja klõpsa Add Repository\nGitHub hoiatab, et see kaust ei ole veel Git repositoorium, klõpsa create a repository\n\nAvanevas aknas võid lisada lühikese kirjelduse (nt “Minu esimene Quarto raamat”) ja valida ka Initialize this repository with a README. Readme fail on hea tava, kuna see annab teistele kasutajatele ülevaate, mis see projekt on ja kuidas seda kasutada. Nt see õpetus siin on Readmefail.\n\nSeejärel klõpsa Create Repository\nNüüd saad ülevalt valida Publish repository. Jälgi, et Keep this code private oleks valitud. Hiljem saad teha oma repositooriumi soovikorral avalikus või seda valitud isikutega jagada. Seejärel klõpsa Publish Repository, mis laeb projekti GitHubi.\n\nSeejärel saad näha oma projekti GitHibis vajutades nupule View on GitHub.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Quarto raamatu loomine nullist</span>"
+    ]
+  },
+  {
+    "objectID": "4-raamatu-loomine-nullist.html#avaldamine-github-pagesi",
+    "href": "4-raamatu-loomine-nullist.html#avaldamine-github-pagesi",
+    "title": "4  Quarto raamatu loomine nullist",
+    "section": "4.3 Avaldamine GitHub Pagesi",
+    "text": "4.3 Avaldamine GitHub Pagesi\n\nLoo uus kaust nimega .github projekti juurkausta (Documents/GitHub/Minu-Raamat/.github)\nSelles .github kaustas loo uus kaust nimega workflows (Documents/GitHub/Minu-Raamat/.github/workflows)\n\nSelles workflows kaustas loo fail nimega publish.yml (Documents/GitHub/Minu-Raamat/.github/workflows/publish.yml)\n\nAva publish.yml fail ja kopeeri sinna järgmine sisu:\n\non:\n  push:\n    branches: \n      - main\n  workflow_dispatch:\n\nname: Quarto Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render and Publish\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: gh-pages\n          path: .\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n\nSalvesta fail (Ctrl+S / Cmd+S)\nVali alt poolt Terminal ja kopeeri sinna käst quarto publish gh-pagesja vajuta Enter. Terminal küsib, kas soovid avaldada raamatu antud aadressil, vajuta Y ja siis Enter. See käsk ehitab raamatu ja avaldab selle GitHub Pagesi kaudu. Käsk loob ka uue haru gh-pages, kus ei ole .qmdfaile jms. Paari minuti pärast on raamat kättesaadav aadressil: https://sinu-kasutajanimi.github.io/raamatu-nimi/\n\nTee commit ning push GitHubi (vt peatükk “3.3. Muudatuste avaldamine”)\n\nNüüd on sinu raamat avaldatud ja iga kord, kui teed muudatusi ja pushid need mainharusse, ehitab GitHub Actions raamatu uuesti gh-pages harusse ja avaldab uuendatud versiooni veebis.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Quarto raamatu loomine nullist</span>"
+    ]
+  },
+  {
+    "objectID": "5-sisu-kolimine-pressbooksist.html",
+    "href": "5-sisu-kolimine-pressbooksist.html",
+    "title": "5  Sisu kolimine Pressbooksist",
+    "section": "",
+    "text": "5.1 Meetod 1: Kopeerimine redaktorist redaktorisse (soovituslik)\nSee on kõige lihtsam viis sisu üle tuua. Enamus sisust saab kopeerida lihtsalt ühest redaktorist teise.\nSammud:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Sisu kolimine Pressbooksist</span>"
+    ]
+  },
+  {
+    "objectID": "5-sisu-kolimine-pressbooksist.html#meetod-1-kopeerimine-redaktorist-redaktorisse-soovituslik",
+    "href": "5-sisu-kolimine-pressbooksist.html#meetod-1-kopeerimine-redaktorist-redaktorisse-soovituslik",
+    "title": "5  Sisu kolimine Pressbooksist",
+    "section": "",
+    "text": "Mis säilib: pealkirjad, lihttekst, rasvane/kaldkiri, pildid, loendid, lingid, tabelid.\nMida tuleb käsitsi lisada: sisseehitatud videod (YouTube iframe’id), H5P elemendid, koodiplokid, text box-id ja muud interaktiivsed komponendid, kuna need ei kopeeru alati õigesti läbi visuaalse redaktori.\n\n\n\nAva Pressbooks ja navigeeri peatükki, mida soovid üle tuua\nVali kogu tekst (Ctrl+A / Cmd+A) või ainult soovitud osa ja kopeeri (Ctrl+C / Cmd+C)\nAva Positronis vastav .qmd fail (või loo uus, vt jaotist “3.2 Uue peatüki lisamine”)\nVeendu, et Positroni redaktor on Visual Mode vaates\nKlõpsa .qmd faili sisus kuhu soovid sisu lisada ja kleebi (Ctrl+V / Cmd+V)\nSalvesta fail (Ctrl+S / Cmd+S)\n\n\n\n\n\n\n\nImportantTähtis!\n\n\n\nQuarto võtab esimese “Heading” teksti ja otsustab selle järgi, mis on peatüki pealkiri. Lisaks tõstetakse see lehe ülaossa.\nSeega tasub peatüki pealkiri liigutada ise lehe algusesse, et vältida probleeme.\nKuna sisukord luuakse automaatselt, tuleb alapealkirjad märkida Heading 2-ks, 3-ks jne, vastasel juhul ei toimi sisukord korrektselt.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Sisu kolimine Pressbooksist</span>"
+    ]
+  },
+  {
+    "objectID": "5-sisu-kolimine-pressbooksist.html#pressbooksi-textbox-id-quartos",
+    "href": "5-sisu-kolimine-pressbooksist.html#pressbooksi-textbox-id-quartos",
+    "title": "5  Sisu kolimine Pressbooksist",
+    "section": "5.2 Pressbooksi textbox-id Quartos",
+    "text": "5.2 Pressbooksi textbox-id Quartos\nPressbooksi textbox-id ei tule kopeerimisel kaasa koos õige kujundusega. Lahendus on need Quartos uuesti luua.\nSammud:\n\nAva Visual mode ja paiguta kursor kohta kuhu soovid luua Callouti\nVali ülevalt tööriista ribalt Insert ja siis Callout\nVali Type vastavalt soovitud kasti värvile (vt alt poolt)\nSisesta Caption väljale kasti pealkiri (Nt Peatükk annab ülevaate)\nEemalda linnuke Display icon alongside callout\nvajuta ‘OK’\nNüüd saad kirjutada kasti sisse soovitud sisu\nKui oled korra Callout kasti valmis loonud saad seda edaspidi soovikorral ka kopeerida\n\nType määrab callouti värvi:\n\nTip = roheline\nNote = sinine\nWarning = kollane\nCaution = oranš\nImportant = punane",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Sisu kolimine Pressbooksist</span>"
+    ]
+  },
+  {
+    "objectID": "5-sisu-kolimine-pressbooksist.html#meetod-2-pressbooksi-eksport-epub-iks-ja-pandociga-markdowniks-mittesoovituslik",
+    "href": "5-sisu-kolimine-pressbooksist.html#meetod-2-pressbooksi-eksport-epub-iks-ja-pandociga-markdowniks-mittesoovituslik",
+    "title": "5  Sisu kolimine Pressbooksist",
+    "section": "5.4 Meetod 2: Pressbooksi eksport EPUB-iks ja Pandociga Markdowniks (mittesoovituslik)",
+    "text": "5.4 Meetod 2: Pressbooksi eksport EPUB-iks ja Pandociga Markdowniks (mittesoovituslik)\nSee meetod on olemas, kuid tulemus ei ole tavaliselt parem kui lihtsalt sisu redaktorist ümber kopeerimine.\nMiinused:\n\nPandocist tulev Markdown vajab tavaliselt palju käsitsi puhastamist\nPildid tuleb eraldi õigesse kohta kopeerida\nPildid ei tööta Positroni Visual mode vaates\n\nSammud:\n\nEkspordi Pressbooksist raamat EPUB failina\nKäivita terminalis pandoc käsk (vajadusel installi enne Pandoc):\n\npandoc eksporditud-raamat.epub -t markdown_strict --extract-media=. -o markdownis-raamat.md\n\nTulemuseks saad ühe Markdown faili ja eraldi meediafailid- Pandoc paneb pildid assets kausta\nSee assets kaust tuleb tõsta _book kausta, et pildid veebiväljundis töötaksid\nSeejärel tuleb Markdown sisu üle kontrollida ja vajadusel Quartole sobivaks kohandada",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Sisu kolimine Pressbooksist</span>"
+    ]
+  },
+  {
+    "objectID": "6-google-analytics-ja-youtube.html",
+    "href": "6-google-analytics-ja-youtube.html",
+    "title": "6  Google Analytics ja YouTube’i sündmused",
+    "section": "",
+    "text": "6.1 Muuda _quarto.yml faili\nKui soovid mõõta lehe külastusi ja YouTube videote kasutust, lisa projekti järgmised failid ja seadistus.\nFailis Opikud/Book_Project/_quarto.yml lisa HTML formaadi alla:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Google Analytics ja YouTube'i sündmused</span>"
+    ]
+  },
+  {
+    "objectID": "6-google-analytics-ja-youtube.html#muuda-_quarto.yml-faili",
+    "href": "6-google-analytics-ja-youtube.html#muuda-_quarto.yml-faili",
+    "title": "6  Google Analytics ja YouTube’i sündmused",
+    "section": "",
+    "text": "format:\n    html:\n        include-in-header:\n            - analytics.html\n        include-after-body:\n            - youtube-ga4.html",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Google Analytics ja YouTube'i sündmused</span>"
+    ]
+  },
+  {
+    "objectID": "6-google-analytics-ja-youtube.html#loo-analytics.html",
+    "href": "6-google-analytics-ja-youtube.html#loo-analytics.html",
+    "title": "6  Google Analytics ja YouTube’i sündmused",
+    "section": "6.2 Loo analytics.html",
+    "text": "6.2 Loo analytics.html\nFail: Opikud/Book_Project/analytics.html\n&lt;!-- Google tag (gtag.js) --&gt;\n&lt;script async src=\"https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX\"&gt;&lt;/script&gt;\n&lt;script&gt;\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n\n    gtag('config', 'G-XXXXXXXXXX');\n&lt;/script&gt;\nAsenda G-XXXXXXXXXX oma GA4 Measurement ID-ga.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Google Analytics ja YouTube'i sündmused</span>"
+    ]
+  },
+  {
+    "objectID": "6-google-analytics-ja-youtube.html#loo-youtube-ga4.html",
+    "href": "6-google-analytics-ja-youtube.html#loo-youtube-ga4.html",
+    "title": "6  Google Analytics ja YouTube’i sündmused",
+    "section": "6.3 Loo youtube-ga4.html",
+    "text": "6.3 Loo youtube-ga4.html\nFail: Opikud/Book_Project/youtube-ga4.html\n&lt;script&gt;\n    var tag = document.createElement('script');\n    tag.src = \"https://www.youtube.com/iframe_api\";\n    document.head.appendChild(tag);\n\n    var players = [];\n\n    function onYouTubeIframeAPIReady() {\n        document.querySelectorAll('.yt-video').forEach((iframe, i) =&gt; {\n            players[i] = new YT.Player(iframe, {\n                events: {\n                    'onStateChange': onPlayerStateChange\n                }\n            });\n        });\n    }\n\n    function onPlayerStateChange(event) {\n        const map = { 1: 'play', 2: 'pause', 0: 'ended' };\n        if (!map[event.data]) return;\n\n        gtag('event', 'youtube_' + map[event.data], {\n            video_id: event.target.getVideoData().video_id,\n            video_title: event.target.getVideoData().title,\n            page_path: location.pathname\n        });\n    }\n&lt;/script&gt;",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Google Analytics ja YouTube'i sündmused</span>"
+    ]
+  },
+  {
+    "objectID": "6-google-analytics-ja-youtube.html#youtube-iframe-nõue-.qmd-failides",
+    "href": "6-google-analytics-ja-youtube.html#youtube-iframe-nõue-.qmd-failides",
+    "title": "6  Google Analytics ja YouTube’i sündmused",
+    "section": "6.4 YouTube iframe nõue .qmd failides",
+    "text": "6.4 YouTube iframe nõue .qmd failides\nYouTube iframe peab sisaldama:\n\nURL-is ?enablejsapi=1 (või &enablejsapi=1, kui URL-is on juba parameetrid)\natribuuti class=\"yt-video\"\n\nNäide:\n&lt;iframe\n    class=\"yt-video\"\n    width=\"560\"\n    height=\"315\"\n    src=\"https://www.youtube.com/embed/VIDEO_ID?enablejsapi=1\"\n    title=\"YouTube video player\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n    referrerpolicy=\"strict-origin-when-cross-origin\"\n    allowfullscreen&gt;\n&lt;/iframe&gt;\nPärast muudatusi renderda raamat uuesti, et skriptid lisataks kõikidele lehtedele.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Google Analytics ja YouTube'i sündmused</span>"
+    ]
+  },
+  {
+    "objectID": "7-kasulikud-lingid.html",
+    "href": "7-kasulikud-lingid.html",
+    "title": "8  Kasulikud lingid",
+    "section": "",
+    "text": "Positron (andmeteaduse IDE)\nQuarto dokumentatsioon\nQuarto raamatute juhend\nMarkdown juhend\nGitHub Desktop juhend",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Kasulikud lingid</span>"
+    ]
+  },
+  {
+    "objectID": "1-kuidas-alustada.html#repositooriumi-loomine-malli-kaudu",
+    "href": "1-kuidas-alustada.html#repositooriumi-loomine-malli-kaudu",
+    "title": "1  Kuidas alustada",
+    "section": "1.3 Repositooriumi loomine malli kaudu",
+    "text": "1.3 Repositooriumi loomine malli kaudu\nJärgmise sammuna loo omale repositoorium kasutades selleks malli, mis sisaldab lihtsat Quarto raamatut.\n\n\n\n\n\n\nImportantOluline on tuua üle kõik harud(branches) ja repositoorium peab olema avalik!\n\n\n\n\n\n\n\nMine brauseris aadressile: https://github.com/ErikTellas/Quarto-user-test\nKlõpsa rohelist “Use this template” nuppu ja seejärel “Create a new repository”\n\nVali “Include all branches”.\n\nAnna repositooriumile nimi Quarto_opikud ja määra repositoorium avalikuks\nSeejärel vajuta nuppu “Create Repository”",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Kuidas alustada</span>"
+    ]
+  },
+  {
+    "objectID": "3-kuidas-sisu-muuta.html#olemasoleva-peatüki-muutmine-visuaalne-redaktor",
+    "href": "3-kuidas-sisu-muuta.html#olemasoleva-peatüki-muutmine-visuaalne-redaktor",
+    "title": "2  Kuidas sisu muuta",
+    "section": "",
+    "text": "2.1.1 Visuaalse redaktori määramine vaikimisi redaktoriks\nPositronis saab Quarto raamatute sisu muuta kahes eri “režiimis”. Nendeks on Source mode ja Visual mode.\nSelle juhendi raames määrame visuaalse redaktori oma vaikimisi redaktoriks.\n\nVali mõni .qmd fail Explorer paneelist ja kliki selle peal parema klahviga. Seejärel vali Open with\n\nAvanenud aknas vali kõige alt Configure default editor\n\nVali Quarto Visual Editor\n\nAvaneb visuaalne redaktor, kus saad toimetada hetkel valitud peatüki faili. Edaspidi avatavad failid avanevad samuti visuaalses redaktoris.\nVisuaalses redaktoris saad lisada ja kustutada teksti, lisada pilte, tabeleid, koodiplokke ja palju muud.\n\n\n\n\n2.1.2 Faili vaatamine Source Mode redaktoriga\nKui sa soovid faili vaadata Source mode redaktoris:\n\nAva soovitud .qmd fail (nt intro.qmd).\nVajuta üleval paremal kolme punktiga ikoonile ja vali Edit in Source Mode. Kui soovid vahetada vaate tagasi Visuaalse redaktori peale, siis tee sama, aga vali Edit in Visual Mode.\n\n\n\nvisual mode valimine\n\n\n\n\n\n2.1.3 Peatüki sisu muutmine\n\nAva soovitud .qmd fail (nt intro.qmd)\nMuuda sisu vastavalt soovile. Testimise jaoks võid kirjutada näiteks mõne uue lause või lõigu.\nÜleval vasakul on valik Render on Save, veendu, et see on valitud. See tähendab, et Quarto üritab tuvastada automaatselt, kui sa salvestad faili ja uuendab eelvaadet.\n\nSalvesta fail (Ctrl+S / Cmd+S).\nVajuta nuppu Preview. See loob eelvaate õpiku veebiväljundist.\n\n\n\n\n\n\nTipEelvaade ei pruugi alati automaatselt uueneda.\n\n\n\nKuigi Quarto üritab jälgida kui oled failis teinud muudatusi ja selle salvestanud, võib juhtuda, et ta ei märka seda. Sellisel juhul vajuta uuesti Preview nuppu või Shift+Cmd+K`/ Ctrl+Shift+K\n\n\n\n\n\n\n\n\nWarningWindowsi kasutajatele\n\n\n\nTestimise käigus olen märganud, et Windowsi arvutites ei pruugi Quarto eelvade näha failide muudatusi. Seega kui oled näiteks lisanud ühe lõigu ja soovid näha kuidas see veebilehel välja näeb, vajuta alt prügikasti ikooni ja seejärel uuesti Preview nuppu või Shift+Cmd+K/ Ctrl+Shift+K\n\n\n\n\n\n\n\n\n\nNoteEelvaadet saab avada ka brauseris\n\n\n\nKui soovid, saad avada eelvaate ka oma brauseris. Selleks vajuta eelvaate paneeli üleval paremal Open in browser nuppu. Soovitan seda proovida siis kui tunned ennast kindlamalt Quarto raamatutega tööd tehes",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Kuidas sisu muuta</span>"
+    ]
+  },
+  {
+    "objectID": "3-kuidas-sisu-muuta.html#iframe-elementide-lisamineh5p-youtube-videod-jms",
+    "href": "3-kuidas-sisu-muuta.html#iframe-elementide-lisamineh5p-youtube-videod-jms",
+    "title": "3  Kuidas sisu muuta",
+    "section": "3.4 iFrame elementide lisamine(H5P, YouTube videod jms)",
+    "text": "3.4 iFrame elementide lisamine(H5P, YouTube videod jms)\n\n3.4.1 H5P elemendi lisamine\n\nVajuta soovitud elemendi peal nuppu &lt;&gt;Manus\n\nKopeeri terve iFrame element\n\nKleebi element viusaalses redaktoris soovitud kohta\n\nPeale faili salvestamist ja eelvaate värskendamist ilmub H5P element raamatus nähtavale\n\n\n\n\n3.4.2 YouTube videote lisamine\n\nVajuta soovitud YouTube video alla jagamise nuppu\n\nSeejärel vali manusta\n\nVajuta akna alt paremalt kopeeri\n\nKopeeritud iFrame elementi kleebi visuaalses redaktoris soovitud kohta\n\nPeale faili salvestamist ja eelvaate värskendamist ilmub YouTube element raamatus nähtavale",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kuidas sisu muuta</span>"
+    ]
+  },
+  {
+    "objectID": "5-sisu-kolimine-pressbooksist.html#iframe-elementide-lisamineh5p-youtube-videod-jms",
+    "href": "5-sisu-kolimine-pressbooksist.html#iframe-elementide-lisamineh5p-youtube-videod-jms",
+    "title": "5  Sisu kolimine Pressbooksist",
+    "section": "5.3 iFrame elementide lisamine(H5P, YouTube videod jms)",
+    "text": "5.3 iFrame elementide lisamine(H5P, YouTube videod jms)\n\n5.3.1 H5P elemendi lisamine\n\nVajuta soovitud elemendi peal nuppu &lt;&gt;Manus\n\nKopeeri terve iFrame element\n\nKleebi element viusaalses redaktoris soovitud kohta\n\nPeale faili salvestamist ja eelvaate värskendamist ilmub H5P element raamatus nähtavale\n\n\n\n\n5.3.2 YouTube videote lisamine\n\nVajuta soovitud YouTube video alla jagamise nuppu\n\nSeejärel vali manusta\n\nVajuta akna alt paremalt kopeeri\n\nKopeeritud iFrame elementi kleebi visuaalses redaktoris soovitud kohta\n\nPeale faili salvestamist ja eelvaate värskendamist ilmub YouTube element raamatus nähtavale",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Sisu kolimine Pressbooksist</span>"
+    ]
+  },
+  {
+    "objectID": "5-sisu-kolimine-pressbooksist.html#section",
+    "href": "5-sisu-kolimine-pressbooksist.html#section",
+    "title": "5  Sisu kolimine Pressbooksist",
+    "section": "5.4 ",
+    "text": "5.4",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Sisu kolimine Pressbooksist</span>"
+    ]
+  }
+]

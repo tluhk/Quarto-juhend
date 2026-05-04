@@ -1,0 +1,7 @@
+# Kasulikud lingid
+
+-   [Positron (andmeteaduse IDE)](https://positron.posit.co/)
+-   [Quarto dokumentatsioon](https://quarto.org/docs/guide/)
+-   [Quarto raamatute juhend](https://quarto.org/docs/books/)
+-   [Markdown juhend](https://www.markdownguide.org/basic-syntax/)
+-   [GitHub Desktop juhend](https://docs.github.com/en/desktop)

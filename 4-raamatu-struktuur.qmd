@@ -1,0 +1,19 @@
+# Raamatu struktuur
+
+
+```         
+Opikud/Book_Project/
+├── _quarto.yml      # Raamatu seadistused (pealkiri, autor, peatükid)
+├── index.qmd        # Avalehekülg
+├── intro.qmd        # Sissejuhatus
+├── H5P.qmd          # H5P peatükk
+├── CODAP.qmd        # CODAP peatükk
+├── NetLogo.qmd      # NetLogo peatükk
+├── references.qmd   # Viited
+├── references.bib   # Viidete andmebaas
+├──_book/           # Genereeritud HTML failid
+└──  .quarto/         # Quarto ajutised failid ja cache
+```
+
+------------------------------------------------------------------------
+

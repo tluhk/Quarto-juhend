@@ -1,2 +1,2 @@
-# Quarto-juhend
-Juhend Quarto raamatu loomiseks ja sisu kolimiseks
+# Quarto Juhend
+Juhend Quarto raamatute kohta
