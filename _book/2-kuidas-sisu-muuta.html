@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; Kasulikud lingid – Quarto Juhend</title>
+<title>2&nbsp; Kuidas sisu muuta – Quarto Juhend</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,7 +65,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./6-google-analytics-ja-youtube.html" rel="prev">
+<link href="./3-raamatu-loomine-nullist.html" rel="next">
+<link href="./1-kuidas-alustada.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -82,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./7-kasulikud-lingid.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Kasulikud lingid</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-kuidas-sisu-muuta.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Kuidas sisu muuta</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-kuidas-sisu-muuta.html" class="sidebar-item-text sidebar-link">
+  <a href="./2-kuidas-sisu-muuta.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Kuidas sisu muuta</span></span></a>
   </div>
 </li>
@@ -151,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./7-kasulikud-lingid.html" class="sidebar-item-text sidebar-link active">
+  <a href="./7-kasulikud-lingid.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Kasulikud lingid</span></span></a>
   </div>
 </li>
@@ -160,15 +196,30 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#olemasoleva-peatüki-muutmine-visuaalne-redaktor" id="toc-olemasoleva-peatüki-muutmine-visuaalne-redaktor" class="nav-link active" data-scroll-target="#olemasoleva-peatüki-muutmine-visuaalne-redaktor"><span class="header-section-number">2.1</span> Olemasoleva peatüki muutmine, visuaalne redaktor</a>
+  <ul class="collapse">
+  <li><a href="#visuaalse-redaktori-määramine-vaikimisi-redaktoriks" id="toc-visuaalse-redaktori-määramine-vaikimisi-redaktoriks" class="nav-link" data-scroll-target="#visuaalse-redaktori-määramine-vaikimisi-redaktoriks"><span class="header-section-number">2.1.1</span> Visuaalse redaktori määramine vaikimisi redaktoriks</a></li>
+  <li><a href="#faili-vaatamine-source-mode-redaktoriga" id="toc-faili-vaatamine-source-mode-redaktoriga" class="nav-link" data-scroll-target="#faili-vaatamine-source-mode-redaktoriga"><span class="header-section-number">2.1.2</span> Faili vaatamine Source Mode redaktoriga</a></li>
+  <li><a href="#peatüki-sisu-muutmine" id="toc-peatüki-sisu-muutmine" class="nav-link" data-scroll-target="#peatüki-sisu-muutmine"><span class="header-section-number">2.1.3</span> Peatüki sisu muutmine</a></li>
+  </ul></li>
+  <li><a href="#uue-peatüki-lisamine" id="toc-uue-peatüki-lisamine" class="nav-link" data-scroll-target="#uue-peatüki-lisamine"><span class="header-section-number">2.2</span> Uue peatüki lisamine</a></li>
+  <li><a href="#muudatuste-avaldamine" id="toc-muudatuste-avaldamine" class="nav-link" data-scroll-target="#muudatuste-avaldamine"><span class="header-section-number">2.3</span> Muudatuste avaldamine</a></li>
+  <li><a href="#raamatu-autori-nime-ja-muu-info-muutmine" id="toc-raamatu-autori-nime-ja-muu-info-muutmine" class="nav-link" data-scroll-target="#raamatu-autori-nime-ja-muu-info-muutmine"><span class="header-section-number">2.4</span> Raamatu autori, nime ja muu info muutmine</a></li>
+  <li><a href="#markdown-põhitõed" id="toc-markdown-põhitõed" class="nav-link" data-scroll-target="#markdown-põhitõed"><span class="header-section-number">2.5</span> Markdown põhitõed</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Kasulikud lingid</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Kuidas sisu muuta</span></h1>
 </div>
 
 
@@ -185,15 +236,221 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<ul>
-<li><a href="https://positron.posit.co/">Positron (andmeteaduse IDE)</a></li>
-<li><a href="https://quarto.org/docs/guide/">Quarto dokumentatsioon</a></li>
-<li><a href="https://quarto.org/docs/books/">Quarto raamatute juhend</a></li>
-<li><a href="https://www.markdownguide.org/basic-syntax/">Markdown juhend</a></li>
-<li><a href="https://docs.github.com/en/desktop">GitHub Desktop juhend</a></li>
-</ul>
+<p>Selles peatükis on juhised, kuidas olemasoleva raamatu sisu muuta ja kuidas lisada uusi peatükke. Lisaks lühike ülevaade Markdowni põhitõdedest, mida kasutatakse <code>.qmd</code> failides.</p>
+<section id="olemasoleva-peatüki-muutmine-visuaalne-redaktor" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="olemasoleva-peatüki-muutmine-visuaalne-redaktor"><span class="header-section-number">2.1</span> Olemasoleva peatüki muutmine, visuaalne redaktor</h2>
+<section id="visuaalse-redaktori-määramine-vaikimisi-redaktoriks" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="visuaalse-redaktori-määramine-vaikimisi-redaktoriks"><span class="header-section-number">2.1.1</span> Visuaalse redaktori määramine vaikimisi redaktoriks</h3>
+<p>Positronis saab Quarto raamatute sisu muuta kahes eri “režiimis”. Nendeks on <strong>Source mode</strong> ja <strong>Visual mode</strong>.</p>
+<p>Selle juhendi raames määrame visuaalse redaktori oma vaikimisi redaktoriks.</p>
+<ol type="1">
+<li><p>Vali mõni <code>.qmd</code> fail Explorer paneelist ja kliki selle peal parema klahviga. Seejärel vali <strong>Open with</strong></p>
+<p><img src="images/image-38.png" class="img-fluid" width="500"></p></li>
+<li><p>Avanenud aknas vali kõige alt <strong>Configure default editor</strong></p>
+<p><img src="images/image-39.png" class="img-fluid" width="500"></p></li>
+<li><p>Vali <strong>Quarto Visual Editor</strong></p>
+<p><img src="images/image-40.png" class="img-fluid" width="500"></p>
+<p>Avaneb visuaalne redaktor, kus saad toimetada hetkel valitud peatüki faili. Edaspidi avatavad failid avanevad samuti visuaalses redaktoris.</p>
+<p>Visuaalses redaktoris saad lisada ja kustutada teksti, lisada pilte, tabeleid, koodiplokke ja palju muud.</p>
+<p><img src="images/image-21.png" class="img-fluid"></p></li>
+</ol>
+</section>
+<section id="faili-vaatamine-source-mode-redaktoriga" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="faili-vaatamine-source-mode-redaktoriga"><span class="header-section-number">2.1.2</span> Faili vaatamine Source Mode redaktoriga</h3>
+<p>Kui sa soovid faili vaadata <strong>Source mode</strong> redaktoris:</p>
+<ol type="1">
+<li><p>Ava soovitud <code>.qmd</code> fail (nt <code>intro.qmd</code>).</p></li>
+<li><p>Vajuta üleval paremal kolme punktiga ikoonile ja vali <strong>Edit in Source Mode.</strong> Kui soovid vahetada vaate tagasi <strong>Visuaalse redaktori</strong> peale, siis tee sama, aga vali <strong>Edit in Visual Mode.</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/image-2.png" class="img-fluid figure-img" width="500"></p>
+<figcaption>visual mode valimine</figcaption>
+</figure>
+</div></li>
+</ol>
+</section>
+<section id="peatüki-sisu-muutmine" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="peatüki-sisu-muutmine"><span class="header-section-number">2.1.3</span> Peatüki sisu muutmine</h3>
+<ol type="1">
+<li><p>Ava soovitud <code>.qmd</code> fail (nt <code>intro.qmd</code>)</p></li>
+<li><p>Muuda sisu vastavalt soovile. Testimise jaoks võid kirjutada näiteks mõne uue lause või lõigu.</p></li>
+<li><p>Üleval vasakul on valik <strong>Render on Save</strong>, veendu, et see on valitud. See tähendab, et Quarto üritab tuvastada automaatselt, kui sa salvestad faili ja uuendab eelvaadet.</p>
+<p><img src="./images/image-3.png" alt="render on save" width="500"></p></li>
+<li><p>Salvesta fail (<code>Ctrl+S</code> / <code>Cmd+S</code>).</p></li>
+<li><p>Vajuta nuppu <strong>Preview</strong>. See loob eelvaate õpiku veebiväljundist.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Eelvaade ei pruugi alati automaatselt uueneda.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Kuigi Quarto üritab jälgida kui oled failis teinud muudatusi ja selle salvestanud, võib juhtuda, et ta ei märka seda. Sellisel juhul vajuta uuesti <strong>Preview</strong> nuppu või <code>Shift+Cmd+K</code>`/ <code>Ctrl+Shift+K</code></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Windowsi kasutajatele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Testimise käigus olen märganud, et Windowsi arvutites ei pruugi Quarto eelvade näha failide muudatusi. Seega kui oled näiteks lisanud ühe lõigu ja soovid näha kuidas see veebilehel välja näeb, vajuta alt prügikasti ikooni ja seejärel uuesti <strong>Preview</strong> nuppu või <code>Shift+Cmd+K</code>/ <code>Ctrl+Shift+K</code></p>
+</div>
+</div>
+<p><img src="images/image-24.png" class="img-fluid" width="500"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Eelvaadet saab avada ka brauseris
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Kui soovid, saad avada eelvaate ka oma brauseris. Selleks vajuta eelvaate paneeli üleval paremal <strong>Open in browser</strong> nuppu. Soovitan seda proovida siis kui tunned ennast kindlamalt Quarto raamatutega tööd tehes</p>
+</div>
+</div>
+<p><img src="images/image-12.png" class="img-fluid"></p></li>
+</ol>
+</section>
+</section>
+<section id="uue-peatüki-lisamine" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="uue-peatüki-lisamine"><span class="header-section-number">2.2</span> Uue peatüki lisamine</h2>
+<p>Kuna iga <code>.qmd</code> fail on omaette peatükk, tuleb uue peatüki lisamiseks luua uus <code>.qmd</code> fail.</p>
+<ol type="1">
+<li><p>Loo uus <code>.qmd</code> fail (nt <code>6-uus-peatykk.qmd</code>) explorer paneelis, klõpsates vasakul üleval nuppu <strong>New File.</strong> Nupp võib olla ruumi säästmiseks peidus, aga ilmub nähtavale kursuriga raamatu kausta nime peal hõljudes.</p>
+<div class="callout callout-style-default callout-important callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Ära unusta faili nime taha kirjutada faili laiendit <code>.qmd</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p><img src="images/image-22.png" class="img-fluid"></p></li>
+<li><p>Järgmiseks on vaja määrata kus kohas raamatus su uus peatükk asub. Ava <code>_quarto.yml</code> fail ja lisa uue peatüki failinimi <code>chapters</code> sektsiooni:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">chapters</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> index.qmd</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> 1-H5P.qmd</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> 2-CODAP.qmd</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> 3-NetLogo.qmd</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> 4-infoplokid.qmd</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> 5-Mis-on-infouhiskond.qmd</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> 6-uus-peatykk.qmd</span><span class="co">      # Lisa näiteks siia, et loodud peatükk oleks viimane</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Salvesta fail (<code>Ctrl+S</code> / <code>Cmd+S</code>).</p></li>
+<li><p>Vali uuesti <code>6-uus-peatykk.qmd</code> fail <strong>visuaalses redaktoris</strong> ning lisa peatükile pealkiri. Kirjuta näiteks “Uus peatükk” ja seejärel muuda teksti stiil ülevalt paremalt <strong>Heading 1-ks</strong>.</p>
+<p><img src="images/image-23.png" class="img-fluid" width="500"></p></li>
+<li><p>Salvesta fail (Ctrl+S / Cmd+S) ja kontrolli tulemust eelvaates.</p></li>
+</ol>
+</section>
+<section id="muudatuste-avaldamine" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="muudatuste-avaldamine"><span class="header-section-number">2.3</span> Muudatuste avaldamine</h2>
+<p>Nüüd oleme teinud raamatusse üsna mitu muudatust ja oleks aeg see ka teistele nähtavaks teha. Selleks kasutame esimeses peatükis paigaldatud <strong>GitHub Desktop</strong> rakendust.</p>
+<p>Me salvestame need tehtud muudatused n-ö “pakiks”. Saadame need GitHubi, kus ka teised näevad neid ja seal luuakse automaatselt ka õpiku veebiversioon. Edaspidi käib veebiversiooni uuendamine sama moodi:</p>
+<ol type="1">
+<li><p>Esmal veendu Positronis, et failid oleksid salvestatud (<code>Ctrl+S</code> / <code>Cmd+S</code>). Kui faili akna pealkirjas on ringikujuline ikoon, tähendab see, et antud failis on salvestamata muudatusi.</p>
+<p><img src="./images/unsaved.png" alt="salvestamata fail" width="500"></p></li>
+<li><p>Ava <strong>GitHub Desktop</strong></p></li>
+<li><p>Vasakul näed muudetud faile, paremal pool valitud failis tehtud muudatusi.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>GitHub Desktop võib näidata rohkem failimuudatusi kui sa tegid
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Kuna Quarto genereerib sinu muudetud <code>.qmd</code> failidest ka veebilehe jms, siis võid näha GitHub desktopis sinu muudetud ühe faili asemele muudatusi näiteks kolmes failis.</p>
+</div>
+</div></li>
+<li><p>Kirjuta alla väljale <strong>“Summary”</strong> lühike kirjeldus (nt “Lisasin uue peatüki”).</p></li>
+<li><p><strong>Description</strong> väljale võid lisada pikema kirjelduse, kui soovid (nt “Uus peatükk annab ülevaate…”).</p></li>
+<li><p>Klõpsa <strong>“Commit to main”</strong> - see salvestab muudatused sinu arvutis “pakiks”.</p>
+<p><img src="./images/image-13.png" alt="commit changes" width="500"></p></li>
+<li><p>Klõpsa üleval või paremalpool <strong>“Push origin”</strong> - see laeb “paki” üles GitHubi.</p>
+<p><img src="./images/image-14.png" alt="push changes" width="500"></p>
+<blockquote class="blockquote">
+<p><strong>Commit</strong> = salvesta muudatused lokaalselt (sinu arvutis)<br>
+<strong>Push</strong> = lae muudatused üles GitHubi (et teised näeksid)</p>
+</blockquote>
+<p>GitHub Actions ehitab ja avaldab raamatu automaatselt. Paari minuti pärast on muudatused nähtavad ka raamtu veebilehel.</p></li>
+<li><p>Et saada <strong>link</strong> oma raamatu veebilehele ja teha see ka teiste jaoks lihtsasti kättesaadavaks, mine veebibrauseris tagasi oma loodud repositooriumi lehele. Selleks vajuta nuppu <strong>View on GitHub</strong>.</p>
+<p><img src="images/image-37.png" class="img-fluid" width="500"></p></li>
+<li><p>Seejärel vajuta <strong>About</strong> sektsioonis hammasratta ikoonile.</p>
+<p><img src="images/image-25.png" class="img-fluid" width="500"></p></li>
+<li><p>Vali avanenud aknas Use your <strong>GitHub Pages website</strong> ja seejärel <strong>Save changes.</strong></p>
+<p><img src="images/image-26.png" class="img-fluid" width="500"></p></li>
+<li><p>Nüüd ilmub sinu raamatu link <strong>About</strong> sektsiooni. Sealt saad selle alati lihtsasti kätte.</p>
+<p><img src="images/image-27.png" class="img-fluid" width="500"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Lingi formaat
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>GitHub Pages veebilehtede formaat on tavaliselt järgmine:<br>
+<a href="https://sinu-kasutajanimi.github.io/Quarto_opikud/">https://SINU-KASUTAJANIMI.github.io/REPOSITOORIUMI-NIMI/</a></p>
+<p>Ehk siis antud juhul on link:<br>
+<a href="https://sinu-kasutajanimi.github.io/Quarto_opikud/">https://SINU-KASUTAJANIMI.github.io/Quarto_opikud/</a></p>
+</div>
+</div></li>
+</ol>
+<hr>
+</section>
+<section id="raamatu-autori-nime-ja-muu-info-muutmine" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="raamatu-autori-nime-ja-muu-info-muutmine"><span class="header-section-number">2.4</span> Raamatu autori, nime ja muu info muutmine</h2>
+<ol type="1">
+<li><p>Ava <code>_quarto.yml</code> fail</p></li>
+<li><p>Muuda <code>title</code>, <code>author</code> ja muid välju vastavalt soovile</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">book</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Minu Quarto Raamat"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Teie Nimi"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"4/17/2026"</span><span class="co"> # Raamatu avaldamise kuupäev</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Lisainfo: <a href="https://quarto.org/docs/guide/" class="uri">https://quarto.org/docs/guide/</a></p></li>
+</ol>
+</section>
+<section id="markdown-põhitõed" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="markdown-põhitõed"><span class="header-section-number">2.5</span> Markdown põhitõed</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Pealkiri 1</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu"># Pealkiri 2</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pealkiri 3</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>**Paks tekst**</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>*Kaldkiri*</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Loetelu punkt</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Teine punkt</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Nummerdatud</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Loetelu</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link</span><span class="co">](https://example.com)</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="al">![Pildi kirjeldus](pilt.png)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Vaata ka - <a href="https://www.markdownguide.org/basic-syntax/">Markdown juhend</a></p>
+<hr>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -603,11 +860,14 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./6-google-analytics-ja-youtube.html" class="pagination-link" aria-label="Google Analytics ja YouTube'i sündmused">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Google Analytics ja YouTube’i sündmused</span></span>
+      <a href="./1-kuidas-alustada.html" class="pagination-link" aria-label="Kuidas alustada">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Kuidas alustada</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./3-raamatu-loomine-nullist.html" class="pagination-link" aria-label="Quarto raamatu loomine nullist">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Quarto raamatu loomine nullist</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

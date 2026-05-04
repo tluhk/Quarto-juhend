@@ -39,32 +39,32 @@ Fail: `Opikud/Book_Project/youtube-ga4.html`
 
 ``` html
 <script>
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    document.head.appendChild(tag);
+  // Load YouTube IFrame API
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.head.appendChild(tag);
 
-    var players = [];
+  var players = [];
 
-    function onYouTubeIframeAPIReady() {
-        document.querySelectorAll('.yt-video').forEach((iframe, i) => {
-            players[i] = new YT.Player(iframe, {
-                events: {
-                    'onStateChange': onPlayerStateChange
-                }
-            });
-        });
-    }
+  function onYouTubeIframeAPIReady() {
+    document.querySelectorAll('.yt-video').forEach((iframe, i) => {
+      players[i] = new YT.Player(iframe, {
+        events: {
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    });
+  }
 
-    function onPlayerStateChange(event) {
-        const map = { 1: 'play', 2: 'pause', 0: 'ended' };
-        if (!map[event.data]) return;
+  function onPlayerStateChange(event) {
+    if (event.data !== 2) return;
 
-        gtag('event', 'youtube_' + map[event.data], {
-            video_id: event.target.getVideoData().video_id,
-            video_title: event.target.getVideoData().title,
-            page_path: location.pathname
-        });
-    }
+    gtag('event', 'youtube_pause', {
+      video_id: event.target.getVideoData().video_id,
+      video_title: event.target.getVideoData().title,
+      page_path: location.pathname
+    });
+  }
 </script>
 ```
 
