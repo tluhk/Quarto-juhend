@@ -44,7 +44,7 @@
     "href": "1-kuidas-alustada.html#repositooriumi-loomine-malli-kaudu",
     "title": "1  Kuidas alustada",
     "section": "1.3 Repositooriumi loomine malli kaudu",
-    "text": "1.3 Repositooriumi loomine malli kaudu\nJärgmise sammuna loo omale repositoorium kasutades selleks malli, mis sisaldab lihtsat Quarto raamatut.\n\n\n\n\n\n\nImportantOluline on tuua üle kõik harud(branches) ja repositoorium peab olema avalik!\n\n\n\n\n\n\n\nMine brauseris aadressile: https://github.com/ErikTellas/Quarto-user-test\nKlõpsa rohelist “Use this template” nuppu ja seejärel “Create a new repository”\n\nVali “Include all branches”.\n\nAnna repositooriumile nimi Quarto_opikud ja määra repositoorium avalikuks\nSeejärel vajuta nuppu “Create Repository”",
+    "text": "1.3 Repositooriumi loomine malli kaudu\nJärgmise sammuna loo omale repositoorium kasutades selleks malli, mis sisaldab lihtsat Quarto raamatut.\n\n\n\n\n\n\nImportantOluline on tuua üle kõik harud(branches) ja repositoorium peab olema avalik!\n\n\n\n\n\n\n\nMine brauseris aadressile: https://github.com/tluhk/Quarto-mall\nKlõpsa rohelist “Use this template” nuppu ja seejärel “Create a new repository”\n\nVali “Include all branches”.\n\nAnna repositooriumile nimi Quarto_opikud ja määra repositoorium avalikuks\nSeejärel vajuta nuppu “Create Repository”",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Kuidas alustada</span>"
     ]
